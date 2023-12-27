@@ -3,8 +3,6 @@ import { yarg } from './config/plugins/yargs.plugin';
 
 const { b, l, s } = yarg;
 
-console.log(s);
-
 let outputMessage = '';
 const headerMessage = `
 ===============================
