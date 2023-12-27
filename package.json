@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-calculator",
+  "version": "1.0.0",
+  "description": "This is a small project to learn about clean architecture + NodeJS.",
+  "main": "app.js",
+  "scripts": {
+    "dev:nodemon": "nodemon",
+    "dev": "ts-node src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Juan Arias",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/yargs": "^17.0.32",
+    "nodemon": "^3.0.2",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
