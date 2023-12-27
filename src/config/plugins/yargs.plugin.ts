@@ -21,6 +21,18 @@ export const yarg = yargs(hideBin(process.argv))
     default: false,
     describe: 'This option displays the table within the terminal',
   })
+  .option('n', {
+    alias: 'name',
+    type: 'string',
+    default: 'table',
+    describe: 'File name',
+  })
+  .option('d', {
+    alias: 'destination',
+    type: 'string',
+    default: './outputs',
+    description: 'File destination',
+  })
   .check((argv, options) => {
     const { b } = argv;
 
