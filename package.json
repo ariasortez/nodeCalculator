@@ -4,7 +4,7 @@
   "description": "This is a small project to learn about clean architecture + NodeJS.",
   "main": "app.js",
   "scripts": {
-    "dev:nodemon": "nodemon",
+    "dev:nodemon": "nodemon -b 7",
     "dev": "ts-node src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
